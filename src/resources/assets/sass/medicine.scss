@@ -1,0 +1,18 @@
+table{width: 100%; border-collapse: collapse;}
+.medicineTable{
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    td{width: 33%; text-align: center; border-bottom: 1px solid #ddd; padding: 10px;}
+    .medicineLeft{display: flex; align-items: center;}
+    .name{font-size: 22px; font-weight: bold;margin-right: 6px;}
+    .classs{font-size: 14px; color: #666;}
+    .date{font-size: 14px; color: #666;}
+}
+.medicineTable:hover{
+    td {
+        background-color: #F4EAE8;
+    }
+    td:first-child { border-radius: 15px 0px 0px 15px; }
+    td:last-child { border-radius: 0px 15px 15px 0px; }
+}
