@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Routes, Route } from 'react-router-dom';
 
 function MedicineTable(props) {
     var data = [
@@ -26,6 +27,11 @@ function MedicineTable(props) {
     ]
     return (
         <div>
+            <div className='buttons'>
+                <Link to={'edit'}>
+                    <button className='pencil'>작성하기</button>
+                </Link>
+            </div>
             <table>
                 <tbody>
                 {data.map(({ image, check, name, classs, date }, idx) => (
